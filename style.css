@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Orbitron&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+    color: #3399cc
+}
+
+.container .image_section {
+    background: #12c2e9;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f64f59, #c471ed, #12c2e9);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    height: 100%;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.container .image_section h1 {
+    margin-bottom: 25px;
+    font-size: 90px;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.container .image_section h2 {
+    font-size: 47px;
+    margin-bottom: 25px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container .image_section p {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
+
+.form_section {
+    height: 100%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 70px;
+
+}
+
+.form_section img {
+    height: 30px;
+    margin-bottom: 45px;
+}
+
+.form_section h1 {
+    margin-bottom: 100px;
+    font-size: 25px;
+}
+
+
+.form_section form {
+    height: 30%;
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form_section input {
+    background: none;
+    border: none;
+    border-bottom: 1px solid black;
+    margin-bottom: 20px;
+    padding: 5px;
+}
+
+.form_section .next_button {
+    color: white;
+    height: 60px;
+    background-color: #3399cc;
+    border: none;
+    margin-bottom: 25px;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.form_section span {
+    display: flex;
+    justify-content: space-between;
+    color: #3399cc;
+}
+
+.form_section .create_button {
+    background: none;
+    border: 1px solid #3399cc;
+    color: #12c2e9;
+    height: 60px;
+    padding: 10px;
+    font-size: 17px;
+}
+
+
+.form_section p {
+    text-align: center;
+    margin: 13px 0px 13px 0px;
+}
+
+.form_section .google_button {
+    background: none;
+    border: 1px solid black;
+    height: 50px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+/* responsive design  */
+
+@media(max-width:800px) {
+
+    .container .image_section {
+        display: none;
+    }
+
+    .container .form_section {
+        width: 100%;
+    }
+
+}
